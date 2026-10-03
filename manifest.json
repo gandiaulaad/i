@@ -1,14 +1,10 @@
 {
-  "format": 1,
-  "id": "com.apple.emojis",
   "name": "Apple Emojis",
-  "description": "Replaces default Discord emojis with iOS/Apple style emojis.",
-  "author": "gandiaulaad",
-  "version": "1.0.0",
-  "dependencies": {
-    "revenge.api": { "version": ">=1" }
-  },
-  "dist": {
-    "script": "index.js"
-  }
+  "description": "Replaces Discord emojis with Apple iOS emojis.",
+  "authors": [
+    {
+      "name": "gandiaulaad"
+    }
+  ],
+  "main": "index.js"
 }
