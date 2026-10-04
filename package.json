@@ -1,0 +1,12 @@
+{
+  "name": "apple-emojis",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --format=cjs --platform=node --jsx=automatic --external:@vendetta/* --external:react --outfile=dist/index.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.0",
+    "typescript": "^5.4.0"
+  }
+}
