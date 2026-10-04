@@ -1,0 +1,14 @@
+{
+    "name": "AppleEmojis",
+    "description": "renders emoji as Apple images instead of system glyphs",
+    "authors": [
+        {
+            "name": "WVERZNXRL",
+            "id": "YOUR_SNOWFLAKE_HERE"
+        }
+    ],
+    "main": "index.js",
+    "vendetta": {
+        "icon": "ic_emoji_24px"
+    }
+}
