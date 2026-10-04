@@ -7,7 +7,7 @@
             "id": "YOUR_SNOWFLAKE_HERE"
         }
     ],
-    "main": "index.js",
+    "main": "https://cdn.jsdelivr.net/gh/gandiaulaad/i@main/dist/index.js",
     "vendetta": {
         "icon": "ic_emoji_24px"
     }
