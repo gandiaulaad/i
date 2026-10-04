@@ -18,7 +18,7 @@ jobs:
       - run: npm run build
       - name: stage manifest for dist
         run: |
-          node -e "const m=require('./manifest.json'); m.main='index.js'; require('fs').writeFileSync('dist/manifest.json', JSON.stringify(m,null,4))"
+          node -e "const m=require('./manifest.json'); m.main='https://cdn.jsdelivr.net/gh/gandiaulaad/i@main/dist/index.js'; require('fs').writeFileSync('dist/manifest.json', JSON.stringify(m,null,4))"
       - name: commit dist
         run: |
           git config user.name "github-actions"
