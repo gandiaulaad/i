@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --format=cjs --platform=node --jsx=automatic --external:@vendetta/* --external:react --outfile=dist/index.js"
+    "build": "esbuild src/index.ts --bundle --format=cjs --platform=node --jsx=automatic --packages=external --outfile=dist/index.js"
   },
   "devDependencies": {
     "esbuild": "^0.21.0",
