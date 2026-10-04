@@ -16,10 +16,13 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm run build
+      - name: stage manifest for dist
+        run: |
+          node -e "const m=require('./manifest.json'); m.main='index.js'; require('fs').writeFileSync('dist/manifest.json', JSON.stringify(m,null,4))"
       - name: commit dist
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add dist/index.js
-          git diff --staged --quiet || git commit -m "build: dist/index.js"
+          git add dist/index.js dist/manifest.json
+          git diff --staged --quiet || git commit -m "build: dist"
           git push
